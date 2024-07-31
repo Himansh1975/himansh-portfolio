@@ -14,10 +14,10 @@ const projectList = [
     image: 'https://via.placeholder.com/300?text=Weather+App' // Mock image URL
   },
   {
-    title: 'Task Manager',
+    title: 'Cosmic Task Manager',
     description: 'An intuitive task manager to organize and prioritize your tasks efficiently.',
-    link: '#',
-    image: 'https://via.placeholder.com/300?text=Task+Manager' // Mock image URL
+    link: 'https://himansh1975.github.io/cosmic-task/',
+    image: 'project3.png' // Mock image URL
   }
 ];
 

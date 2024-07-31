@@ -34,7 +34,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
     <motion.header
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/10 dark:bg-gray-900/10 backdrop-blur-lg' 
+          ? 'bg-white/10 dark:bg-gray-900/10 backdrop-blur-xl' 
           : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
@@ -57,8 +57,8 @@ function Header({ isDarkMode, toggleDarkMode }) {
           </motion.span>
         </Link>
 
-        <ul className="hidden md:flex space-x-8">
-          {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+        <ul className="hidden md:flex space-x-8 relative right-12">
+          {['Home', 'About', 'Projects', 'Contact'].map((item) => (
             <NavItem key={item} label={item} onClick={() => scrollToSection(item.toLowerCase())} />
           ))}
         </ul>
