@@ -16,37 +16,39 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-100 text-center animate-slideIn">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
-        <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
-          <div className="mb-4">
+    <section id="contact" className="py-20 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-5xl font-extrabold mb-12 text-gray-900 dark:text-white">
+          Contact Me
+        </h2>
+        <form className="max-w-lg mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+          <div className="mb-6">
             <input
               type="text"
               name="name"
               placeholder="Name"
-              className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-300 transition duration-300 dark:bg-gray-700 dark:text-white"
               value={formData.name}
               onChange={handleChange}
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <input
               type="email"
               name="email"
               placeholder="Email"
-              className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-300 transition duration-300 dark:bg-gray-700 dark:text-white"
               value={formData.email}
               onChange={handleChange}
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <textarea
               name="message"
               placeholder="Message"
-              className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-300 transition duration-300 dark:bg-gray-700 dark:text-white"
               rows="4"
               value={formData.message}
               onChange={handleChange}
@@ -55,7 +57,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300"
           >
             Send
           </button>

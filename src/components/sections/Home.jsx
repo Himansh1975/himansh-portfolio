@@ -5,14 +5,15 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 
-function Home() {
+function Home({ isDarkMode }) {
   return (
     <div>
-      <HeroSection />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <HeroSection isDarkMode={isDarkMode} />
+      <div className='bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-black '>
+        <About isDarkMode={isDarkMode} />
+        <Projects isDarkMode={isDarkMode} />
+        <Contact isDarkMode={isDarkMode} />
+      </div>
     </div>
   );
 }
